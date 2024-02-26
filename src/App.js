@@ -1,5 +1,7 @@
+import { Container, Ul, ListItem, H2 } from "./Container/styled.js";
 import author from "./images/author.jpg";
 import message from "./images/Message.png";
+import gitIcon from "./images/Github_on focus LM.svg";
 import {
   MainContainer,
   H1,
@@ -8,11 +10,9 @@ import {
   ButtonHire,
   LeadParagraph,
   Caption,
-  Container,
-  Ul,
-  ListItem,
-  H2,
 } from "./MainContainer/styled.js";
+import { Portfolio, PortfolioSectionName, PortfoliosHeader } from "./Portfolio/styled.js";
+import { Tile, TileContent, TileDemo, TileHeader, TilesContainer } from "./Tile/styled.js";
 
 function App() {
   return (
@@ -67,8 +67,61 @@ function App() {
           <ListItem>Cypress</ListItem>
           <ListItem>React Context</ListItem>
           <ListItem>Unit testing</ListItem>
-          </Ul>
+        </Ul>
       </Container>
+      <Portfolio>
+        <PortfoliosHeader>
+          <img src={gitIcon} alt="" />
+          <PortfolioSectionName>Portfolio</PortfolioSectionName>
+          <LeadParagraph>My recent projects</LeadParagraph>
+        </PortfoliosHeader>
+        <TilesContainer>
+          <Tile>
+            <TileHeader> Currency-Converter </TileHeader>
+            <TileContent>
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+            </TileContent>
+            <TileDemo> Demo: Link to my project </TileDemo>
+            <TileContent> Code: link to gitHub repository </TileContent>
+          </Tile>
+          <Tile>
+            <TileHeader> Currency-Converter </TileHeader>
+            <TileContent>
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+            </TileContent>
+            <TileDemo> Demo: Link to my project </TileDemo>
+            <TileContent> Code: link to gitHub repository </TileContent>
+          </Tile>
+          <Tile>
+            <TileHeader> Currency-Converter </TileHeader>
+            <TileContent>
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+              </TileContent>
+            <TileDemo> Demo: Link to my project </TileDemo>
+            <TileContent> Code: link to gitHub repository </TileContent>
+          </Tile>
+          <Tile>
+            <TileHeader> Currency-Converter </TileHeader>
+            <TileContent>
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+              Description of my currency-converter project
+            </TileContent>
+            <TileDemo> Demo: Link to my project </TileDemo>
+            <TileContent> Code: link to gitHub repository </TileContent>
+          </Tile>
+        </TilesContainer>
+      </Portfolio>
     </>
   );
 }
